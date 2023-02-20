@@ -14,6 +14,8 @@ inputs:
 outputs:
   approved:
     description: 'if current pull request is approved, this value is set to true otherwise false.'
+  approvals:
+    description: 'number of approvals'
 runs:
   using: 'node12'
   main: 'dist/index.js'
