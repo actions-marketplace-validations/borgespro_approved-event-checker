@@ -1,9 +1,9 @@
-name: 'approved-event-checker'
+name: 'approvals-event-checker'
 description: 'export approved state to step output'
 branding:
   icon: 'thumbs-up'
   color: 'green'
-author: 'luisrjaeger'
+author: 'borgespro'
 inputs:
   approvals:
     description: 'number of approvals require to be approved.'
