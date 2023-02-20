@@ -14,3 +14,5 @@ test.cmd
 *.http
 
 event.json
+
+.idea

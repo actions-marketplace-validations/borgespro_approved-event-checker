@@ -40,6 +40,7 @@ async function run() {
       }
 
       core.setOutput("approved", approvals <= users.size);
+      core.setOutput("approvals", users.size);
     } else {
       core.info(`${process.env.GITHUB_EVENT_NAME}/${action}/${state} is not suitable for check.`);
     }

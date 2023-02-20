@@ -19,6 +19,10 @@ Allowing us to consider changes requested
 
 Pull Request is approved or not. if approved, value is `true` otherwise `false`;
 
+### `approvals`
+
+Number of approvals of the pull request.
+
 ## Example usage
 
     on: pull_request_review
@@ -35,4 +39,4 @@ Pull Request is approved or not. if approved, value is `true` otherwise `false`;
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         - run: echo "Approved !!"
-          if: ${{ steps.approved.outputs.approved == 'true' }}
+          if: ${{ steps.approved.outputs.approved == 'true' && steps.approved.outputs.approvals == '2' }}
